@@ -238,9 +238,9 @@ func (s *stream) setSubscription(id string, callback func(b []byte)) {
 }
 
 // Subscribe implements the PubSubTransport interface
-func (s *stream) Subscribe(method string, callback func(b []byte)) (func() error, error) {
+func (s *stream) Subscribe(callback func(b []byte), params ...interface{}) (func() error, error) {
 	var out string
-	if err := s.Call("eth_subscribe", &out, method); err != nil {
+	if err := s.Call("eth_subscribe", &out, params...); err != nil {
 		return nil, err
 	}
 

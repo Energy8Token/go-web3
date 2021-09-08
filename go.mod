@@ -1,6 +1,6 @@
 module github.com/Energy8Token/go-web3
 
-go 1.17
+go 1.12
 
 require (
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
@@ -37,15 +37,4 @@ require (
 	google.golang.org/appengine v1.6.5 // indirect
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
 	gotest.tools v2.2.0+incompatible // indirect
-)
-
-require (
-	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/konsorten/go-windows-terminal-sequences v1.0.1 // indirect
-	github.com/opencontainers/go-digest v1.0.0-rc1 // indirect
-	github.com/pkg/errors v0.8.1 // indirect
-	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/valyala/bytebufferpool v1.0.0 // indirect
-	golang.org/x/sys v0.0.0-20191026070338-33540a1f6037 // indirect
-	gopkg.in/yaml.v2 v2.2.2 // indirect
 )

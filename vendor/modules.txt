@@ -1,8 +1,8 @@
-# github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78
-## explicit
+# github.com/Azure/go-ansiterm v0.0.0-20210617225240-d185dfc1b5a1
+## explicit; go 1.16
 github.com/Azure/go-ansiterm
 github.com/Azure/go-ansiterm/winterm
-# github.com/Microsoft/go-winio v0.4.13
+# github.com/Microsoft/go-winio v0.5.0
 ## explicit; go 1.12
 github.com/Microsoft/go-winio
 github.com/Microsoft/go-winio/pkg/guid
@@ -30,8 +30,8 @@ github.com/btcsuite/btcutil/hdkeychain
 # github.com/cenkalti/backoff v2.2.1+incompatible
 ## explicit
 github.com/cenkalti/backoff
-# github.com/containerd/continuity v0.0.0-20191214063359-1097c8bae83b
-## explicit; go 1.11
+# github.com/containerd/continuity v0.1.0
+## explicit; go 1.13
 github.com/containerd/continuity/pathdriver
 # github.com/davecgh/go-spew v1.1.1
 ## explicit
@@ -45,6 +45,8 @@ github.com/docker/go-units
 # github.com/gorilla/websocket v1.4.2
 ## explicit; go 1.12
 github.com/gorilla/websocket
+# github.com/gotestyourself/gotestyourself v2.2.0+incompatible
+## explicit
 # github.com/jmoiron/sqlx v1.3.4
 ## explicit; go 1.10
 github.com/jmoiron/sqlx
@@ -54,9 +56,6 @@ github.com/jmoiron/sqlx/reflectx
 github.com/klauspost/compress/flate
 github.com/klauspost/compress/gzip
 github.com/klauspost/compress/zlib
-# github.com/konsorten/go-windows-terminal-sequences v1.0.1
-## explicit
-github.com/konsorten/go-windows-terminal-sequences
 # github.com/lib/pq v1.10.3
 ## explicit; go 1.13
 github.com/lib/pq
@@ -65,15 +64,15 @@ github.com/lib/pq/scram
 # github.com/mitchellh/mapstructure v1.4.1
 ## explicit; go 1.14
 github.com/mitchellh/mapstructure
-# github.com/opencontainers/go-digest v1.0.0-rc1
-## explicit
+# github.com/opencontainers/go-digest v1.0.0
+## explicit; go 1.13
 github.com/opencontainers/go-digest
 # github.com/opencontainers/image-spec v1.0.1
 ## explicit
 github.com/opencontainers/image-spec/specs-go
 github.com/opencontainers/image-spec/specs-go/v1
-# github.com/opencontainers/runc v0.1.1
-## explicit
+# github.com/opencontainers/runc v1.0.2
+## explicit; go 1.13
 github.com/opencontainers/runc/libcontainer/user
 # github.com/ory/dockertest v3.3.5+incompatible
 ## explicit
@@ -102,14 +101,14 @@ github.com/ory/dockertest/docker/types/network
 github.com/ory/dockertest/docker/types/registry
 github.com/ory/dockertest/docker/types/strslice
 github.com/ory/dockertest/docker/types/versions
-# github.com/pkg/errors v0.8.1
+# github.com/pkg/errors v0.9.1
 ## explicit
 github.com/pkg/errors
 # github.com/pmezard/go-difflib v1.0.0
 ## explicit
 github.com/pmezard/go-difflib/difflib
-# github.com/sirupsen/logrus v1.4.2
-## explicit
+# github.com/sirupsen/logrus v1.8.1
+## explicit; go 1.13
 github.com/sirupsen/logrus
 # github.com/stretchr/testify v1.7.0
 ## explicit; go 1.13
@@ -121,17 +120,6 @@ github.com/tyler-smith/go-bip39/wordlists
 # github.com/umbracle/fastrlp v0.0.0-20210128110402-41364ca56ca8
 ## explicit; go 1.12
 github.com/umbracle/fastrlp
-# github.com/umbracle/go-web3 v0.0.0-20210825191548-f0dfd5ed56ce
-## explicit; go 1.12
-github.com/umbracle/go-web3
-github.com/umbracle/go-web3/abi
-github.com/umbracle/go-web3/compiler
-github.com/umbracle/go-web3/contract
-github.com/umbracle/go-web3/jsonrpc
-github.com/umbracle/go-web3/jsonrpc/codec
-github.com/umbracle/go-web3/jsonrpc/transport
-github.com/umbracle/go-web3/testutil
-github.com/umbracle/go-web3/tracker/store
 # github.com/valyala/bytebufferpool v1.0.0
 ## explicit
 github.com/valyala/bytebufferpool
@@ -152,7 +140,7 @@ golang.org/x/crypto/sha3
 # golang.org/x/net v0.0.0-20210510120150-4163338589ed
 ## explicit; go 1.17
 golang.org/x/net/context
-# golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1
+# golang.org/x/sys v0.0.0-20210616094352-59db8d763f22
 ## explicit; go 1.17
 golang.org/x/sys/cpu
 golang.org/x/sys/internal/unsafeheader
@@ -161,3 +149,5 @@ golang.org/x/sys/windows
 # gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
 ## explicit
 gopkg.in/yaml.v3
+# gotest.tools v2.2.0+incompatible
+## explicit

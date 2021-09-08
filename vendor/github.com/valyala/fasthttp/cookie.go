@@ -65,7 +65,7 @@ var cookiePool = &sync.Pool{
 //
 // Cookie instance MUST NOT be used from concurrently running goroutines.
 type Cookie struct {
-	noCopy noCopy //nolint:unused,structcheck
+	noCopy noCopy
 
 	key    []byte
 	value  []byte
@@ -388,21 +388,19 @@ func (c *Cookie) ParseBytes(src []byte) error {
 
 			case 's': // "samesite"
 				if caseInsensitiveCompare(strCookieSameSite, kv.key) {
-					if len(kv.value) > 0 {
-						// Case insensitive switch on first char
-						switch kv.value[0] | 0x20 {
-						case 'l': // "lax"
-							if caseInsensitiveCompare(strCookieSameSiteLax, kv.value) {
-								c.sameSite = CookieSameSiteLaxMode
-							}
-						case 's': // "strict"
-							if caseInsensitiveCompare(strCookieSameSiteStrict, kv.value) {
-								c.sameSite = CookieSameSiteStrictMode
-							}
-						case 'n': // "none"
-							if caseInsensitiveCompare(strCookieSameSiteNone, kv.value) {
-								c.sameSite = CookieSameSiteNoneMode
-							}
+					// Case insensitive switch on first char
+					switch kv.value[0] | 0x20 {
+					case 'l': // "lax"
+						if caseInsensitiveCompare(strCookieSameSiteLax, kv.value) {
+							c.sameSite = CookieSameSiteLaxMode
+						}
+					case 's': // "strict"
+						if caseInsensitiveCompare(strCookieSameSiteStrict, kv.value) {
+							c.sameSite = CookieSameSiteStrictMode
+						}
+					case 'n': // "none"
+						if caseInsensitiveCompare(strCookieSameSiteNone, kv.value) {
+							c.sameSite = CookieSameSiteNoneMode
 						}
 					}
 				}

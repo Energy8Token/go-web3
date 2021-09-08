@@ -134,7 +134,7 @@ var (
 //    * CompressHuffmanOnly
 func AppendGzipBytesLevel(dst, src []byte, level int) []byte {
 	w := &byteSliceWriter{dst}
-	WriteGzipLevel(w, src, level) //nolint:errcheck
+	WriteGzipLevel(w, src, level)
 	return w.b
 }
 
@@ -230,7 +230,7 @@ func AppendGunzipBytes(dst, src []byte) ([]byte, error) {
 //    * CompressHuffmanOnly
 func AppendDeflateBytesLevel(dst, src []byte, level int) []byte {
 	w := &byteSliceWriter{dst}
-	WriteDeflateLevel(w, src, level) //nolint:errcheck
+	WriteDeflateLevel(w, src, level)
 	return w.b
 }
 
@@ -342,15 +342,6 @@ func (r *byteSliceReader) Read(p []byte) (int, error) {
 	return n, nil
 }
 
-func (r *byteSliceReader) ReadByte() (byte, error) {
-	if len(r.b) == 0 {
-		return 0, io.EOF
-	}
-	n := r.b[0]
-	r.b = r.b[1:]
-	return n, nil
-}
-
 func acquireStacklessDeflateWriter(w io.Writer, level int) stackless.Writer {
 	nLevel := normalizeCompressLevel(level)
 	p := stacklessDeflateWriterPoolMap[nLevel]
@@ -424,7 +415,7 @@ func isFileCompressible(f *os.File, minCompressRatio float64) bool {
 	}
 	_, err := copyZeroAlloc(zw, lr)
 	releaseStacklessGzipWriter(zw, CompressDefaultCompression)
-	f.Seek(0, 0) //nolint:errcheck
+	f.Seek(0, 0)
 	if err != nil {
 		return false
 	}

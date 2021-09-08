@@ -8,8 +8,8 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/Energy8Token/go-web3/jsonrpc/codec"
 	"github.com/gorilla/websocket"
-	"github.com/umbracle/go-web3/jsonrpc/codec"
 )
 
 func newWebsocket(url string) (Transport, error) {

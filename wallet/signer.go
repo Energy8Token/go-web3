@@ -3,8 +3,8 @@ package wallet
 import (
 	"math/big"
 
+	"github.com/Energy8Token/go-web3"
 	"github.com/umbracle/fastrlp"
-	"github.com/umbracle/go-web3"
 )
 
 type Signer interface {

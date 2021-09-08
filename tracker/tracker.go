@@ -15,10 +15,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	web3 "github.com/umbracle/go-web3"
-	"github.com/umbracle/go-web3/etherscan"
-	"github.com/umbracle/go-web3/jsonrpc/codec"
-	"github.com/umbracle/go-web3/tracker/store"
+	web3 "github.com/Energy8Token/go-web3"
+	"github.com/Energy8Token/go-web3/etherscan"
+	"github.com/Energy8Token/go-web3/jsonrpc/codec"
+	"github.com/Energy8Token/go-web3/tracker/store"
 )
 
 var (

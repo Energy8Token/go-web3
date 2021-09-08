@@ -4,11 +4,11 @@ import (
 	"math/big"
 	"testing"
 
+	"github.com/Energy8Token/go-web3"
+	"github.com/Energy8Token/go-web3/jsonrpc"
+	"github.com/Energy8Token/go-web3/testutil"
+	"github.com/Energy8Token/go-web3/wallet"
 	"github.com/stretchr/testify/assert"
-	"github.com/umbracle/go-web3"
-	"github.com/umbracle/go-web3/jsonrpc"
-	"github.com/umbracle/go-web3/testutil"
-	"github.com/umbracle/go-web3/wallet"
 )
 
 func TestSendSignedTransaction(t *testing.T) {

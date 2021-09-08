@@ -13,12 +13,12 @@ import (
 	"os/signal"
 	"syscall"
 
-	web3 "github.com/umbracle/go-web3"
-	"github.com/umbracle/go-web3/abi"
-	"github.com/umbracle/go-web3/jsonrpc"
-	"github.com/umbracle/go-web3/tracker"
+	web3 "github.com/Energy8Token/go-web3"
+	"github.com/Energy8Token/go-web3/abi"
+	"github.com/Energy8Token/go-web3/jsonrpc"
+	"github.com/Energy8Token/go-web3/tracker"
 
-	boltdbStore "github.com/umbracle/go-web3/tracker/store/boltdb"
+	boltdbStore "github.com/Energy8Token/go-web3/tracker/store/boltdb"
 )
 
 func main() {

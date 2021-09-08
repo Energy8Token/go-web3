@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/umbracle/go-web3"
-	"github.com/umbracle/go-web3/abi"
-	"github.com/umbracle/go-web3/jsonrpc"
+	"github.com/Energy8Token/go-web3"
+	"github.com/Energy8Token/go-web3/abi"
+	"github.com/Energy8Token/go-web3/jsonrpc"
 )
 
 // Contract is an Ethereum contract

@@ -5,11 +5,11 @@ import (
 	"math/big"
 	"testing"
 
+	"github.com/Energy8Token/go-web3"
+	"github.com/Energy8Token/go-web3/abi"
+	"github.com/Energy8Token/go-web3/jsonrpc"
+	"github.com/Energy8Token/go-web3/testutil"
 	"github.com/stretchr/testify/assert"
-	"github.com/umbracle/go-web3"
-	"github.com/umbracle/go-web3/abi"
-	"github.com/umbracle/go-web3/jsonrpc"
-	"github.com/umbracle/go-web3/testutil"
 )
 
 var (

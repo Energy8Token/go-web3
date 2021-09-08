@@ -15,12 +15,12 @@ import (
 	"testing"
 	"time"
 
-	web3 "github.com/umbracle/go-web3"
-	"github.com/umbracle/go-web3/abi"
-	"github.com/umbracle/go-web3/jsonrpc"
-	"github.com/umbracle/go-web3/jsonrpc/codec"
-	"github.com/umbracle/go-web3/testutil"
-	"github.com/umbracle/go-web3/tracker/store/inmem"
+	web3 "github.com/Energy8Token/go-web3"
+	"github.com/Energy8Token/go-web3/abi"
+	"github.com/Energy8Token/go-web3/jsonrpc"
+	"github.com/Energy8Token/go-web3/jsonrpc/codec"
+	"github.com/Energy8Token/go-web3/testutil"
+	"github.com/Energy8Token/go-web3/tracker/store/inmem"
 )
 
 func testConfig() *Config {
